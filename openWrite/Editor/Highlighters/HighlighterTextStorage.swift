@@ -14,7 +14,7 @@ public class HighlighterTextStorage: NSTextStorage {
     private var highlighters: [Highlighter] = []
     
     public var defaultAttributes: [NSAttributedStringKey: Any] = [
-        NSAttributedStringKey.font: NSFont.systemFont(ofSize: NSFont.systemFontSize)
+        NSAttributedStringKey.font: NSFont(name: "Inconsolata-Regular", size: NSFont.systemFontSize)
     ] {
         didSet {
             self.editedAll(editActions: .editedAttributes)

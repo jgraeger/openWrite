@@ -21,6 +21,9 @@
 		4839E08A210FBA9A00633145 /* Highlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E089210FBA9A00633145 /* Highlighter.swift */; };
 		4839E08C210FC00A00633145 /* MDHeaderHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E08B210FC00A00633145 /* MDHeaderHighlighter.swift */; };
 		4839E08E210FC18700633145 /* MDAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E08D210FC18700633145 /* MDAttributes.swift */; };
+		4839E096210FC6E400633145 /* Inconsolata-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4839E094210FC6E400633145 /* Inconsolata-Bold.ttf */; };
+		4839E097210FC6E400633145 /* Inconsolata-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4839E095210FC6E400633145 /* Inconsolata-Regular.ttf */; };
+		4839E09A210FC87200633145 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E099210FC87200633145 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		4839E089210FBA9A00633145 /* Highlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highlighter.swift; sourceTree = "<group>"; };
 		4839E08B210FC00A00633145 /* MDHeaderHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDHeaderHighlighter.swift; sourceTree = "<group>"; };
 		4839E08D210FC18700633145 /* MDAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDAttributes.swift; sourceTree = "<group>"; };
+		4839E094210FC6E400633145 /* Inconsolata-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata-Bold.ttf"; sourceTree = "<group>"; };
+		4839E095210FC6E400633145 /* Inconsolata-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata-Regular.ttf"; sourceTree = "<group>"; };
+		4839E099210FC87200633145 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +118,11 @@
 		4839E04F210FADB800633145 /* openWrite */ = {
 			isa = PBXGroup;
 			children = (
+				4839E098210FC72300633145 /* Font */,
 				4839E081210FB21400633145 /* Editor */,
 				4839E07E210FADD400633145 /* Extensions */,
 				4839E050210FADB800633145 /* AppDelegate.swift */,
+				4839E099210FC87200633145 /* EditViewController.swift */,
 				4839E052210FADB800633145 /* ViewController.swift */,
 				4839E054210FADB800633145 /* Document.swift */,
 				4839E056210FADB900633145 /* Assets.xcassets */,
@@ -170,6 +178,15 @@
 				4839E08D210FC18700633145 /* MDAttributes.swift */,
 			);
 			path = Highlighters;
+			sourceTree = "<group>";
+		};
+		4839E098210FC72300633145 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4839E094210FC6E400633145 /* Inconsolata-Bold.ttf */,
+				4839E095210FC6E400633145 /* Inconsolata-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4839E057210FADB900633145 /* Assets.xcassets in Resources */,
+				4839E097210FC6E400633145 /* Inconsolata-Regular.ttf in Resources */,
+				4839E096210FC6E400633145 /* Inconsolata-Bold.ttf in Resources */,
 				4839E05A210FADB900633145 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +330,7 @@
 				4839E08C210FC00A00633145 /* MDHeaderHighlighter.swift in Sources */,
 				4839E083210FB23400633145 /* EditTextView.swift in Sources */,
 				4839E085210FB30D00633145 /* TextStorage.swift in Sources */,
+				4839E09A210FC87200633145 /* EditViewController.swift in Sources */,
 				4839E08E210FC18700633145 /* MDAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
