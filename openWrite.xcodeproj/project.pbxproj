@@ -14,6 +14,13 @@
 		4839E05A210FADB900633145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4839E058210FADB900633145 /* Main.storyboard */; };
 		4839E066210FADB900633145 /* openWriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E065210FADB900633145 /* openWriteTests.swift */; };
 		4839E071210FADB900633145 /* openWriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E070210FADB900633145 /* openWriteUITests.swift */; };
+		4839E080210FAE2800633145 /* NSColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E07F210FAE2800633145 /* NSColor+Hex.swift */; };
+		4839E083210FB23400633145 /* EditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E082210FB23400633145 /* EditTextView.swift */; };
+		4839E085210FB30D00633145 /* TextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E084210FB30D00633145 /* TextStorage.swift */; };
+		4839E087210FB62300633145 /* HighlighterTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E086210FB62300633145 /* HighlighterTextStorage.swift */; };
+		4839E08A210FBA9A00633145 /* Highlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E089210FBA9A00633145 /* Highlighter.swift */; };
+		4839E08C210FC00A00633145 /* MDHeaderHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E08B210FC00A00633145 /* MDHeaderHighlighter.swift */; };
+		4839E08E210FC18700633145 /* MDAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E08D210FC18700633145 /* MDAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		4839E06C210FADB900633145 /* openWriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openWriteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4839E070210FADB900633145 /* openWriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openWriteUITests.swift; sourceTree = "<group>"; };
 		4839E072210FADB900633145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4839E07F210FAE2800633145 /* NSColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Hex.swift"; sourceTree = "<group>"; };
+		4839E082210FB23400633145 /* EditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextView.swift; sourceTree = "<group>"; };
+		4839E084210FB30D00633145 /* TextStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStorage.swift; sourceTree = "<group>"; };
+		4839E086210FB62300633145 /* HighlighterTextStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlighterTextStorage.swift; sourceTree = "<group>"; };
+		4839E089210FBA9A00633145 /* Highlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highlighter.swift; sourceTree = "<group>"; };
+		4839E08B210FC00A00633145 /* MDHeaderHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDHeaderHighlighter.swift; sourceTree = "<group>"; };
+		4839E08D210FC18700633145 /* MDAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,8 @@
 		4839E04F210FADB800633145 /* openWrite */ = {
 			isa = PBXGroup;
 			children = (
+				4839E081210FB21400633145 /* Editor */,
+				4839E07E210FADD400633145 /* Extensions */,
 				4839E050210FADB800633145 /* AppDelegate.swift */,
 				4839E052210FADB800633145 /* ViewController.swift */,
 				4839E054210FADB800633145 /* Document.swift */,
@@ -125,6 +141,35 @@
 				4839E072210FADB900633145 /* Info.plist */,
 			);
 			path = openWriteUITests;
+			sourceTree = "<group>";
+		};
+		4839E07E210FADD400633145 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4839E07F210FAE2800633145 /* NSColor+Hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4839E081210FB21400633145 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				4839E088210FBA8900633145 /* Highlighters */,
+				4839E082210FB23400633145 /* EditTextView.swift */,
+				4839E084210FB30D00633145 /* TextStorage.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		4839E088210FBA8900633145 /* Highlighters */ = {
+			isa = PBXGroup;
+			children = (
+				4839E086210FB62300633145 /* HighlighterTextStorage.swift */,
+				4839E089210FBA9A00633145 /* Highlighter.swift */,
+				4839E08B210FC00A00633145 /* MDHeaderHighlighter.swift */,
+				4839E08D210FC18700633145 /* MDAttributes.swift */,
+			);
+			path = Highlighters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,9 +302,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4839E080210FAE2800633145 /* NSColor+Hex.swift in Sources */,
+				4839E08A210FBA9A00633145 /* Highlighter.swift in Sources */,
 				4839E053210FADB800633145 /* ViewController.swift in Sources */,
 				4839E051210FADB800633145 /* AppDelegate.swift in Sources */,
 				4839E055210FADB800633145 /* Document.swift in Sources */,
+				4839E087210FB62300633145 /* HighlighterTextStorage.swift in Sources */,
+				4839E08C210FC00A00633145 /* MDHeaderHighlighter.swift in Sources */,
+				4839E083210FB23400633145 /* EditTextView.swift in Sources */,
+				4839E085210FB30D00633145 /* TextStorage.swift in Sources */,
+				4839E08E210FC18700633145 /* MDAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
