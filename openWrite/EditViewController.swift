@@ -10,7 +10,7 @@ import AppKit
 import Cocoa
 
 
-class EditViewController : NSViewController {
+class MainViewController : NSViewController {
     
     override func viewDidLoad() {
         print("Okay")

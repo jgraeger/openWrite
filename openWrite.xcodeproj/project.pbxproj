@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4839E051210FADB800633145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E050210FADB800633145 /* AppDelegate.swift */; };
-		4839E053210FADB800633145 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E052210FADB800633145 /* ViewController.swift */; };
 		4839E055210FADB800633145 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E054210FADB800633145 /* Document.swift */; };
 		4839E057210FADB900633145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4839E056210FADB900633145 /* Assets.xcassets */; };
 		4839E05A210FADB900633145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4839E058210FADB900633145 /* Main.storyboard */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		4839E04D210FADB800633145 /* openWrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openWrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4839E050210FADB800633145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4839E052210FADB800633145 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4839E054210FADB800633145 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		4839E056210FADB900633145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4839E059210FADB900633145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				4839E07E210FADD400633145 /* Extensions */,
 				4839E050210FADB800633145 /* AppDelegate.swift */,
 				4839E099210FC87200633145 /* EditViewController.swift */,
-				4839E052210FADB800633145 /* ViewController.swift */,
 				4839E054210FADB800633145 /* Document.swift */,
 				4839E056210FADB900633145 /* Assets.xcassets */,
 				4839E058210FADB900633145 /* Main.storyboard */,
@@ -323,7 +320,6 @@
 			files = (
 				4839E080210FAE2800633145 /* NSColor+Hex.swift in Sources */,
 				4839E08A210FBA9A00633145 /* Highlighter.swift in Sources */,
-				4839E053210FADB800633145 /* ViewController.swift in Sources */,
 				4839E051210FADB800633145 /* AppDelegate.swift in Sources */,
 				4839E055210FADB800633145 /* Document.swift in Sources */,
 				4839E087210FB62300633145 /* HighlighterTextStorage.swift in Sources */,
