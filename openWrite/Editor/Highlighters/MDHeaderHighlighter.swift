@@ -10,7 +10,7 @@ import AppKit
 
 public final class MDHeaderHighlighter: Highlighter {
     
-    public func highlight(attributedString: NSMutableAttributedString) {
+    public func highlight(_ attributedString: NSMutableAttributedString) {
         
     }
     

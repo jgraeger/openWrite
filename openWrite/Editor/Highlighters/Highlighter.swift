@@ -13,6 +13,6 @@ public protocol Highlighter {
     /**
      Highlight text in an "AttributedString"
     */
-    func highlight(attributedString: NSMutableAttributedString)
+    func highlight(_ attributedString: NSMutableAttributedString)
     
 }

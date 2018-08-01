@@ -13,8 +13,6 @@ import Cocoa
 class MainViewController : NSViewController {
     
     override func viewDidLoad() {
-        print("Okay")
-        
         super.viewDidLoad()
         
         let storage = TextStorage()
@@ -27,5 +25,7 @@ class MainViewController : NSViewController {
         var constraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-20-[textView]-20-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: views)
         constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[textView]-20-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: views)
         NSLayoutConstraint.activate(constraints)
+			
+				print("View did load finished")
     }
 }

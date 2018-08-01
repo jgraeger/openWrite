@@ -14,7 +14,7 @@ public class HighlighterTextStorage: NSTextStorage {
     private var highlighters: [Highlighter] = []
     
     public var defaultAttributes: [NSAttributedStringKey: Any] = [
-        NSAttributedStringKey.font: NSFont(name: "Inconsolata-Regular", size: NSFont.systemFontSize)
+        NSAttributedStringKey.font: NSFont(name: "Inconsolata-Regular", size: NSFont.systemFontSize)!
     ] {
         didSet {
             self.editedAll(editActions: .editedAttributes)
@@ -59,6 +59,18 @@ public class HighlighterTextStorage: NSTextStorage {
     
     private func editedAll(editActions: NSTextStorageEditActions) {
         self.edited(editActions, range: NSRange(location: 0, length: self.backendStore.length), changeInLength: 0)
+    }
+    
+    private func highlightRange(range: NSRange) {
+        self.backendStore.beginEditing()
+        self.setAttributes(defaultAttributes, range: range)
+        let attributedString = self.backendStore.attributedSubstring(from: range).mutableCopy() as! NSMutableAttributedString
+        
+        for highlighter in self.highlighters {
+            highlighter.highlight(attributedString)
+        }
+        self.replaceCharacters(in: range, with: attributedString)
+        self.backendStore.endEditing()
     }
     
 }

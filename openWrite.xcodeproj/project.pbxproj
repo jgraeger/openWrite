@@ -23,6 +23,8 @@
 		4839E096210FC6E400633145 /* Inconsolata-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4839E094210FC6E400633145 /* Inconsolata-Bold.ttf */; };
 		4839E097210FC6E400633145 /* Inconsolata-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4839E095210FC6E400633145 /* Inconsolata-Regular.ttf */; };
 		4839E09A210FC87200633145 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839E099210FC87200633145 /* EditViewController.swift */; };
+		48F75A362111D01900178FB9 /* EditorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F75A352111D01900178FB9 /* EditorTheme.swift */; };
+		48F75A382111D0B400178FB9 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F75A372111D0B400178FB9 /* Style.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		4839E094210FC6E400633145 /* Inconsolata-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata-Bold.ttf"; sourceTree = "<group>"; };
 		4839E095210FC6E400633145 /* Inconsolata-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata-Regular.ttf"; sourceTree = "<group>"; };
 		4839E099210FC87200633145 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		48F75A352111D01900178FB9 /* EditorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorTheme.swift; sourceTree = "<group>"; };
+		48F75A372111D0B400178FB9 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 		4839E081210FB21400633145 /* Editor */ = {
 			isa = PBXGroup;
 			children = (
+				48F75A342111D00900178FB9 /* Style */,
 				4839E088210FBA8900633145 /* Highlighters */,
 				4839E082210FB23400633145 /* EditTextView.swift */,
 				4839E084210FB30D00633145 /* TextStorage.swift */,
@@ -184,6 +189,15 @@
 				4839E095210FC6E400633145 /* Inconsolata-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		48F75A342111D00900178FB9 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				48F75A352111D01900178FB9 /* EditorTheme.swift */,
+				48F75A372111D0B400178FB9 /* Style.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,9 +339,11 @@
 				4839E087210FB62300633145 /* HighlighterTextStorage.swift in Sources */,
 				4839E08C210FC00A00633145 /* MDHeaderHighlighter.swift in Sources */,
 				4839E083210FB23400633145 /* EditTextView.swift in Sources */,
+				48F75A382111D0B400178FB9 /* Style.swift in Sources */,
 				4839E085210FB30D00633145 /* TextStorage.swift in Sources */,
 				4839E09A210FC87200633145 /* EditViewController.swift in Sources */,
 				4839E08E210FC18700633145 /* MDAttributes.swift in Sources */,
+				48F75A362111D01900178FB9 /* EditorTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
